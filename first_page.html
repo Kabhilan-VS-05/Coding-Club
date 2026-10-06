@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  name="viewport" content="width=device-width"/>
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+
+
+
+
+</head>
+<body style="background-image: linear-gradient(to left,darkblue,grey); ">
+    <header  style="background-image: linear-gradient(to right,rgb(8, 5, 71) ,rgba(23, 4, 27, 0.729));">
+      <link rel="stylesheet" type="text/css" href="hackathon.css">
+        <img class="logo" src="images/IMG_20240211_211156_adobe_express.png" alt="logo" width="70px"></img>
+        <nav>
+            <ul class="nav">
+                <li><a href="#kab">About us</a></li>
+                <li><a href="contect.html">Contact</a></li>
+                <li><a href="topics.html">Topics</a></li>
+                <li><a href="faultydetail.html">Faculty Details</a></li>
+                <li><a href="event.html">Events</a></li>
+            </ul>
+        </nav>
+        <div style="position: absolute; right: 10px;">
+            <a class="btn" href="login.html"><button>login</button></a>
+          </div> 
+    <hr>
+    <br>
+</header>
+<div  >
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <source src="backg.mp4" type="video/mp4">
+      </video>
+      <div style="margin-bottom: 300px; margin-top: 200px;">
+      <center>
+        <img src="images/IMG_20240211_211156_adobe_express.png" alt="logo" width="300px">
+       <p style="font-size: 4vw; color: #b090c5;">
+        Coding Club
+       </p>
+       
+        </center>  
+        </div>
+        <hr>
+</div>
+
+<main >
+    <style>
+        *{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+}
+
+.main{
+          width: 80%;
+          min-height: 380px;
+          text-align: center;
+          position: relative;
+          cursor: pointer;
+}
+.service{
+              background: #fff;
+              padding: 30px;
+              border-radius: 10px;
+              position: absolute;
+              bottom: 0;
+              z-index: 1;
+              box-shadow: 0 0 20px -15px #030380;
+              transition: transform .8s;
+}
+.service-logo{
+       width: 130px;
+       height: 130px;
+       border-radius: 50%;
+       margin: -90px auto 0;
+       background: #fff;
+       border: 18px solid #007bff;
+}
+.service-logo img{
+       width: 50px;
+       margin-top: 20px;
+       transition: transform 1s;
+}
+.service h4{
+         height: 20px;
+         width: 80%;
+         background: #fff;
+         margin: 10px auto;
+         position: relative;
+}
+.service h4::after{
+         content: ' ';
+         width: 40px;
+         height: 30px;
+         background: linear-gradient(to right, #fff, #007bff);
+         position: absolute;
+         right: -5px;
+         top: -5px;
+         z-index: -1;
+}
+.service h4::before{
+         content: ' ';
+         width: 40px;
+         height: 30px;
+         background: linear-gradient(to right, #007bff, #fff);
+         position: absolute;
+         left: -5px;
+         bottom: -5px;
+         z-index: -1;
+}
+.shadowOne{
+        height: 200px;
+        width: 80%;
+        background: #fff;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 10%;
+        z-index: -1;
+        box-shadow: 0 0 20px -15px #030380;
+        transition: transform .8s;
+}
+.shadowTwo{
+        height: 200px;
+        width: 64%;
+        background: #fff;
+        position: absolute;
+        border-radius: 10px;
+        bottom: 0;
+        left: 18%;
+        z-index: -2;
+}
+.main:hover  .service{
+         transform: translateY(-50px);
+}
+.main:hover  .shadowOne{
+         transform: translateY(-25px);
+}
+.main:hover  img{
+         transform: rotate(360deg);
+}
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (max-width: 750px) {
+    #background-video { display: none; }
+    body {
+      background-image: linear-gradient(to right, blue,red) no-repeat;
+      background-size: cover;
+    }
+}
+    </style>
+
+<div id="om" >
+      <center>
+            <p style="font-size: 4vw; margin-top: 100px; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: lighter;">Vision & Mission</p>
+      <div class="row" style="margin-top: 100px; margin-bottom:300px; ">
+            <div class="col-md-4">
+                  <div class="main">
+                        <div class="service">
+                              <div class="service-logo">
+                                      <img src="images/mission.jpg">
+                              </div>
+                                  <h4> MISSION </h4>
+                                   <p> *To foster a welcoming and inclusive environment for members of all experience
+                                     levels to learn.</p>
+                                    <p>*To provide opportunities for members to develop their problem-solving, critical
+                                         thinking. </p>
+                                   
+                        </div>
+                       <div class="shadowOne"></div>
+                       <div class="shadowTwo"></div>
+                  </div>
+            </div>      
+            <div class="col-md-4">
+                  <div class="main">
+                        <div class="service">
+                              <div class="service-logo">
+                                      <img src="images/vision.jpg">
+                              </div>
+                                  <h4> VISION </h4>
+                                   <p> *To be a respected learning hub where members can develop their potential as coders.</p>
+                                   <p>To empower individuals to creatively solve problems through the power of code. </p>
+                                   
+                        </div>
+                       <div class="shadowOne"></div>
+                       <div class="shadowTwo"></div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+               
+                  <div class="main">
+                        <div class="service">
+                              <div class="service-logo">
+                                      <img src="images/value.jpg">
+                              </div>
+                                  <h4> VALUE </h4>
+                                   <p> *It can help you develop essential skills like problem-solving, critical thinking, creativity.
+                                   <p> *As you learn and grow your coding skills, you'll gain confidence in your abilities. </p>
+                        </div>
+                       <div class="shadowOne"></div>
+                       <div class="shadowTwo"></div>
+                  </div>
+            </div>
+            </div>
+            </center>
+            </div>
+</main>
+
+<div style="background-image: linear-gradient(to left,rgba(89, 10, 107, 0.853),rgb(74, 85, 214));" id="kab">
+
+    <center>
+        <div style="height: 500px;">
+            <br><br><br><br>
+        <p style="font-size: 4vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: lighter;color: #100355; "><b> About us </b></p>
+        <br><br><br>
+        <p style="color: rgb(0, 0, 0); font-weight:700; font-size:22px;">
+            "Great things are done by a series of small things brought together". <br>
+
+Being Coding Club of a technical institution, we do pretty much everything and <br> anything related to coding. Coding events, Workshops, Hackathons (48 hours non stop coding), <br> contests are just to name a few. We believe in coding our problems away.
+        </p>
+        </div>
+    </center>
+
+
+
+<style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    text-align: center;
+  padding: 2px;
+  background-color: #111;
+  color: white;
+}
+.icon{
+    width: 100%;
+    padding: 40px 10px 2px;
+}
+    
+.icon-pic{
+display: flex;
+ justify-content: center;
+}
+
+.icon-pic a{
+    text-decoration: none;
+    padding: 6px;
+    background-color: rgb(221, 198, 224);
+    margin: 6px;
+    border-radius: 25%;
+}
+.icon-pic a i{
+    font-size: 1em;
+    color: black;
+    opacity: 0.9;
+}
+.icon-pic a:hover{
+    background-color:#da45da;
+    transition: 0.5s;
+}
+.links{
+color: white;
+}
+.nav-bar{
+    margin-right: 1200px;
+}
+
+</style>
+<nav class="nav-bar">
+        <link rel="stylesheet" href="navigation.css">
+    <div class="nav-container">
+        
+        <p class="nav-elements"><a href="first_page.html"><i class="fa-solid fa-house"></i> </a></p>
+        <p class="nav-elements"><a href="contect.html"><i class="fa-solid fa-address-book"></i></a></p>
+        <p class="nav-elements"><a href="topics.html"><i class="fa-solid fa-laptop-code"></i></a></p>
+        <p class="nav-elements"><a href="faultydetail.html"><i class="fa-solid fa-user"></i></a></p>
+        <p class="nav-elements"><a href="event.html"><i class="fa-solid fa-address-card"></i></i></a></p>
+    </div>
+  
+ </nav>
+  
+
+<footer >
+    <div class="icon" >
+        <div class="icon-pic">
+       
+            <a href="first_page.html"><b><i class="fa fa-home"></i></b></a>
+            <a href="https://www.instagram.com/msc_ss_kec?igsh=MzRlODBiNWFlZA=="  target="_blank"><i class="fa-brands fa-instagram"></i></a> 
+            <a href="https://www.facebook.com/profile.php?id=100083061342139"><i class="fa-brands fa-facebook"></i></a>  
+            <a href="https://github.com/topics/kongu-engineering-college" ><i class="fa-brands fa-github"></i></a>  
+            <a href="https://www.linkedin.com/in/kec-msc-ctpg-658616244"><i class="fa-brands fa-linkedin"></i></a>  
+            <a href="contect.html"><i class="fa fa-volume-control-phone"></i></a>
+      </div>
+    </div>
+    <p style="margin-left: 1000px; " ><a href="" style="color: rgb(125, 14, 125); font-size: 10px;"> © Created by Naari Kootam.</a></p>
+    </footer>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+
+</body>
+</html>

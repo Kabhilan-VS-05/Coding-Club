@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    text-align: center;
+  padding: 2px;
+  background-color: #111;
+  color: white;
+}
+.icon{
+    width: 100%;
+    padding: 20px 10px 5px;
+}
+    
+.icon-pic{
+display: flex;
+ justify-content: center;
+}
+
+.icon-pic a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 30%;
+}
+.icon-pic a i{
+    font-size: 1em;
+    color: black;
+    opacity: 0.9;
+}
+.icon-pic a:hover{
+    background-color:darkviolet;
+    transition: 0.5s;
+}
+.links{
+color: rgb(109, 58, 58);
+}
+.nav-bar{
+    margin-right: 1200px;
+}

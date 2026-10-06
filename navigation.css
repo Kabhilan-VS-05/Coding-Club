@@ -1,0 +1,24 @@
+.nav-container{
+    display: inline-flex;
+    flex-direction: column;
+  
+    background-color:rgba(169, 53, 169, 0.611);
+    color: rgb(85, 68, 123);
+    padding-bottom: 30px;
+    padding-top:030px ;
+    position: fixed;
+    margin-top: 200px;
+    top: 0; 
+   right: 20px;
+    padding-right: 10px;
+    padding-left:10px ;
+    border: solid;
+    border-radius: 20px;
+  z-index: 4;
+    
+
+}
+.nav-container a:hover{
+  color:rgb(70, 0, 211);
+  transition: 0.5s;
+}
